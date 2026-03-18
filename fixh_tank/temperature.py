@@ -7,11 +7,11 @@ def monitor():
 
     # get multiple temperature readings
     temp_readings = get_temps()
-    num_readings = 0
+    num_readings = 3
 
     # sum adds up all items in list
     ave_temp = sum(temp_readings)
-    ave_temp = ave_temp  - num_readings
+    ave_temp = ave_temp  / num_readings
 
     if (ave_temp < temps[0]):
       mesg = "Average temperature too cold!"
